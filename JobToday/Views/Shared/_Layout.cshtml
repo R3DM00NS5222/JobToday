@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/JobToday.styles.css" asp-append-version="true" />
 </head>
-<body>
+<body class="bbody">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style=" background-color: #fcfbfc;">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style=" background-color: #c7a4ff;">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="\img\logo.png" width="75" height="75" class="d-inline-block align-top" alt="Logo">
+                    <img src="\img\logo.png" width="75" height="50" class="d-inline-block align-top" alt="Logo">
                     </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -45,9 +45,11 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted" style=" background-color: #c7a4ff;">
         <div class="container">
-            &copy; 2022 - JobToday - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 - Job Today - <a asp-area="" asp-controller="Home" asp-action="Privacy">
+                <img src="img\PrivacyPolicy.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+                </a>
             - <a href="https://github.com/R3DM00NS5222/JobToday.git">Source Code</a>
         </div>
     </footer>

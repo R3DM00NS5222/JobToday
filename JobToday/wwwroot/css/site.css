@@ -14,5 +14,17 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.bbody
+{
+    background-image: url("Background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+a {
+    color: #fcfbfc;
 }
