@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using JobToday.Data;
 using JobToday.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace JobToday.Controllers
 {
@@ -46,6 +47,7 @@ namespace JobToday.Controllers
             return View(jobPosting);
         }
 
+        [Authorize(Roles = "Administrator")]
         // GET: JobPostings/Create
         public IActionResult Create()
         {
@@ -59,6 +61,8 @@ namespace JobToday.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
+
         public async Task<IActionResult> Create([Bind("JobPostingId,TagId,CompanyId,PostedBy,JobPostName,CompanyName,JobPostStatus,JobPay,JobPostDescription")] JobPosting jobPosting)
         {
             if (ModelState.IsValid)
@@ -73,6 +77,8 @@ namespace JobToday.Controllers
         }
 
         // GET: JobPostings/Edit/5
+        [Authorize(Roles = "Administrator")]
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.JobPostings == null)
@@ -95,6 +101,8 @@ namespace JobToday.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
+
         public async Task<IActionResult> Edit(int id, [Bind("JobPostingId,TagId,CompanyId,PostedBy,JobPostName,CompanyName,JobPostStatus,JobPay,JobPostDescription")] JobPosting jobPosting)
         {
             if (id != jobPosting.JobPostingId)
@@ -128,6 +136,8 @@ namespace JobToday.Controllers
         }
 
         // GET: JobPostings/Delete/5
+        [Authorize(Roles = "Administrator")]
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.JobPostings == null)
@@ -150,6 +160,8 @@ namespace JobToday.Controllers
         // POST: JobPostings/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
+
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.JobPostings == null)

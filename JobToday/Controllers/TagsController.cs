@@ -7,9 +7,12 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using JobToday.Data;
 using JobToday.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace JobToday.Controllers
 {
+    [Authorize(Roles ="Administrator")]
+
     public class TagsController : Controller
     {
         private readonly ApplicationDbContext _context;

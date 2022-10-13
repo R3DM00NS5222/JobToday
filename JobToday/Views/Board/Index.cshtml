@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+@model IEnumerable<JobToday.Models.Tag>
+
+<h1 class="text-light">Apply by Tags</h1>
+
+<section class="row card-group">
+    @foreach (var tag in Model)
+    {
+        <div class="col-sm-6 col-lg-4 mb-3" >
+            <div class="card mb-4 text-center h-100" style="background-color: #c7a4ff;">
+                <div class="card-body">
+                    @tag.TagName;
+                </div>
+            </div>
+        </div>   
+    }
+</section>
+

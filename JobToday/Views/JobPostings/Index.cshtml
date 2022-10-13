@@ -4,10 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1 class="text-light">Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    @if (User.IsInRole("Administrator")) {
+        <a asp-action="Create">Create New</a>
+    }
+
 </p>
 <table class="table table-dark table-striped table-hover">
     <thead>
