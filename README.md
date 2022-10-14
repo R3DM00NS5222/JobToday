@@ -24,7 +24,7 @@ Test1234!
 
 #### Bonus 1
 
-Job Today Custom Logo
+Job Today Custom Logo and Theme
 
 #### Bonus 2
 
