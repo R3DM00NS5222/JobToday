@@ -20,6 +20,15 @@ admin@gc.cs
 
 Test1234!
 
+## Bonus Functionalities
+
+#### Bonus 1
+
+Job Today Custom Logo
+
+#### Bonus 2
+
+User Authentication and Multi-Level Authorization
 
 ## Authors
 
