@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1 class="text-light">Index</h1>
+<h1 class="text-light">Postings</h1>
 
 <p>
     @if (User.IsInRole("Administrator")) {
@@ -70,11 +70,16 @@
                 @Html.DisplayFor(modelItem => item.Tag.TagName)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.JobPostingId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.JobPostingId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.JobPostingId">Delete</a>
+                    @if (User.IsInRole("Administrator"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.JobPostingId">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.JobPostingId">Delete</a>
+                    }
+                <a asp-action="Details" asp-route-id="@item.JobPostingId">Details</a>
+                
             </td>
         </tr>
 }
     </tbody>
 </table>
+
