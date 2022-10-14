@@ -8,7 +8,7 @@ It has tags/categories of jobs which is meant to be the primary categorization o
 There is the option to view the companies partnered with us in the section too.
 
 
-
+ [Go to the live website here!](https://jobtoday.azurewebsites.net/)
 
 ## Access Credentials
 
