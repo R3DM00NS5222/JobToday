@@ -1,5 +1,5 @@
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](https://github.com/R3DM00NS5222/JobToday/blob/c0f471afbb8c7cf1e410c08ad847540368c80dd8/JobToday/wwwroot/img/logo.png)
 
 
 # Job Today
