@@ -20,6 +20,14 @@ admin@gc.cs
 
 Test1234!
 
+#### Email access for Jaret (Is signed in as user, you can use the abave email for admin functions)
+
+jaret@gc.ca
+
+#### Admin Access Password
+
+Test1234$
+
 ## Bonus Functionalities
 
 #### Bonus 1
