@@ -1,6 +1,8 @@
 using JobToday.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Configuration;
+
 
 var builder = WebApplication.CreateBuilder(args);
 var config = builder.Configuration;
