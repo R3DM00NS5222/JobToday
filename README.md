@@ -28,16 +28,6 @@ jaret@gc.ca
 
 Test1234$
 
-## Bonus Functionalities
-
-#### Bonus 1
-
-Job Today Custom Logo and Theme
-
-#### Bonus 2
-
-User Authentication and Multi-Level Authorization
-
 ## Authors
 
 - [@R3DM00NS5222](https://github.com/R3DM00NS5222)
@@ -52,6 +42,7 @@ User Authentication and Multi-Level Authorization
 - Cross platform
 - User Authentication
 - Multi-level User Authorization
+- Google Authentication
 
 
 ## Support
